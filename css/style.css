@@ -18,6 +18,9 @@ a {
 .rocketFixed img {
     height: 170px;
 }
+
+/* header */
+
 .header__resize {
     width: 1200px;
     margin: 0 auto;
@@ -26,7 +29,7 @@ a {
     height: 100vh;
     background: linear-gradient(to top, #59d377, #92fc45);
 }
-.odd, .nav a {
+.odd, .navigation a {
     color: #fff;
 }
 .even {
@@ -53,6 +56,28 @@ a {
 }
 .nav__item a:hover {
     border-bottom: 3px solid #fcff00;
+}
+.logo__item a:hover {
+    color: #555;
+}
+ul.logo .nav-resize {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opasity 2s, height 1s;
+    font-size: 0.5em;
+}
+.logo .nav-resize li {
+    display: block;
+    margin: 7px 0;
+}
+li:hover .nav-resize {
+    height: 240px;
+    opacity: 1;
+    transition: opasity 2s, height 1s;
+    text-align: left;
 }
 .templateNumber {
     height: 90vh;
@@ -88,4 +113,36 @@ a {
 }
 .templateNumber button:hover {
     background: #8cf398;
+}
+
+/* contactWindow */
+
+.contact {
+    width: 320px;
+    margin: 0 auto; 
+}
+#contactWindow {
+    display: none;
+    top: 25%;
+    position: absolute;
+    width: 320px;
+    background: linear-gradient(to top, #92fc45, #59d377);
+    font-size: 1.1em;
+    border-radius: 20px;
+    border: #fcff00 2px solid;
+    text-shadow: #555 1px 1px;
+}
+#contactClose {
+    cursor: pointer;
+    text-align: right;
+    margin: 10px 20px;
+}
+.information {
+    margin: 20px;
+}
+.information__item {
+    margin-bottom: 15px;
+}
+#contactClose:hover {
+    color: #ff0000;
 }
