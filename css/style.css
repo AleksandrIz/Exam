@@ -28,8 +28,13 @@ a {
 .header {
     height: 100vh;
     background: linear-gradient(to top, #59d377, #92fc45);
+    color: #fff;
 }
-.odd, .navigation a {
+.navigation a {
+    color: #fff;
+}
+.odd {
+    background: #59d377;
     color: #fff;
 }
 .even {
@@ -96,11 +101,13 @@ li:hover .nav-resize {
     font-size: 6em;
     margin: 30px 0;
 }
-.templateNumber .line {
+.line {
     width: 5%;
     height: 3px;
-    background: #fff;
     margin-bottom: 30px;
+}
+.templateNumber .line {
+    background: #fff;
 }
 .templateNumber button {
     cursor: pointer;
@@ -134,15 +141,89 @@ li:hover .nav-resize {
 }
 #contactClose {
     cursor: pointer;
-    text-align: right;
+    float: right;
     margin: 10px 20px;
 }
 .information {
-    margin: 20px;
+    margin: 40px 20px 20px;
 }
 .information__item {
     margin-bottom: 15px;
 }
 #contactClose:hover {
     color: #ff0000;
+}
+
+/* main */
+
+.main__resize {
+    width: 1200px;
+    margin: 0 auto;
+}
+.section {
+    height: 100vh;
+}
+.article .line {
+    background: #000;
+}
+.article {
+    height: 35vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.article__item h2 {
+    font-size: 1.7em;
+    margin-top: 40px;
+}
+
+/* slider */
+
+.slider {
+    height: 65vh;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.slider__list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.slide-wrap {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 10000000px;
+}
+.slide-wrap__item {
+    background: #59d377;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    float: left;
+}
+.navy {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prev-slide {
+    left: 0;
+}
+.next-slide {
+    right: 0;
 }

@@ -2,6 +2,9 @@
     .header__resize {
         width: 480px;
     }
+    .main__resize {
+        width: 480px;
+    }
     .nav-resise {
         display: block;
     }
@@ -26,5 +29,18 @@
     }
     .logo__item {
         margin-left: 25px;
+    }
+    .article {
+        width: 90%;
+        margin: 0 auto;
+        height: 50vh;
+    }
+    .slider {
+        height: 50vh;
+        width: 63.6%;
+    }
+    .slide-wrap__item {
+        height: 245px;
+        width: 245px;
     }
 }
