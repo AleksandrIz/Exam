@@ -5,6 +5,9 @@
     .main__resize {
         width: 480px;
     }
+    .footer__resize {
+        width: 480px;
+    }
     .nav-resise {
         display: block;
     }
@@ -37,10 +40,19 @@
     }
     .slider {
         height: 50vh;
-        width: 63.6%;
+        width: 75%;
     }
-    .slide-wrap__item {
-        height: 245px;
-        width: 245px;
+    .video__item {
+        width: 400px;
+        height: 225px;
+    }
+    .quoteText {
+        width: 90%;
+    }
+    .quoteText__item {
+        margin: 0 15px;
+    }
+    .quote img {
+        height: 4vh;
     }
 }

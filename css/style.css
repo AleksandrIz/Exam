@@ -14,6 +14,7 @@ a {
     position: fixed;
     bottom: 100px;
     right: 15px;
+    z-index: 100;
 }
 .rocketFixed img {
     height: 170px;
@@ -79,7 +80,7 @@ ul.logo .nav-resize {
     margin: 7px 0;
 }
 li:hover .nav-resize {
-    height: 240px;
+    height: 110px;
     opacity: 1;
     transition: opasity 2s, height 1s;
     text-align: left;
@@ -102,11 +103,11 @@ li:hover .nav-resize {
     margin: 30px 0;
 }
 .line {
-    width: 5%;
+    width: 55px;
     height: 3px;
     margin-bottom: 30px;
 }
-.templateNumber .line {
+.line {
     background: #fff;
 }
 .templateNumber button {
@@ -178,7 +179,69 @@ li:hover .nav-resize {
     font-size: 1.7em;
     margin-top: 40px;
 }
+.article__item p {
+    width: 90%;
+    margin: 0 auto;
+}
+.video {
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video__item {
+    width: 560px;
+    height: 315px;
+}
 
+/* quote */
+.quoteText {
+    height: 25vh;
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.quoteText__item {
+    margin: 0 35px;
+}
+.quoteText__item img {
+    height: 8vh;
+    width: auto;
+}
+.quoteText__item p {
+    margin-bottom: 15px;
+}
+.quoteText__item .author {
+    display: flex;
+}
+.author .line {
+    margin: 7px 10px 0 0;
+}
+.author p {
+    color: #000;
+}
+
+/* blog */
+.blog img {
+    height: 100vh;
+    width: 100%;
+}
+
+/* footer */
+.footer {
+    height: 50px;
+}
+.footer__resize {
+    height: inherit;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.7em;
+}
 /* slider */
 
 .slider {
