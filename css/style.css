@@ -194,6 +194,45 @@ li:hover .nav-resize {
     width: 560px;
     height: 315px;
 }
+/* work */
+.work-head {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.work-head h2 {
+    font-size: 1.7em;
+    margin-bottom: 30px;
+}
+.work-content {
+    height: 80vh;
+    display: flex;
+}
+.work-content__icon {
+    width: 29%;
+}
+.verline {
+    width: 2px;
+    height: 80vh;
+    background: #fff;
+}
+.work-content__text {
+    width: 70%;
+}
+.work-content__icon .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.icon h4 {
+    font-size: 0.8em;
+}
+.icon img {
+    margin-right: 15px;
+}
 
 /* quote */
 .quoteText {
@@ -225,26 +264,23 @@ li:hover .nav-resize {
 
 /* blog */
 .blog {
-    height: 70vh;
+    height: 100vh;
     background: url("backg/blog.png");
     background-color: rgb(89, 211, 119);
     background-size: cover;
 }
 .blog h2{
     font-size: 1.7em;
-    height: 20vh;
+    height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .bcontent {
-    height: 50vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.bcontent__column .visible {
-    display: none;
 }
 .bcontent__column__item {
     padding-bottom: 40px;
@@ -269,14 +305,20 @@ li:hover .nav-resize {
 }
 .moreb {
     margin: 0 0 10px 25px;
+    display: none;
 }
 
 /* footer */
-.footer {
-    height: 50px;
+.map-block {
+    height: 30vh;
+    width: 100%;
+}
+.map {
+    height: inherit;
+    width: inherit;
 }
 .footer__resize {
-    height: inherit;
+    height: 50px;
     width: 1200px;
     margin: 0 auto;
     display: flex;

@@ -58,14 +58,8 @@
     .bcontent__column .hidden {
         display: none;
     }
-    .bcontent__column .visible {
+    .bcontent__column .moreb {
         display: block;
-    }
-    .blog h2 {
-        height: 10vh;
-    }
-    .bcontent {
-        height: 60vh;
     }
     .bcontent__column__item {
         display: flex;
