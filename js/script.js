@@ -1,8 +1,26 @@
-// плавный переход вверх
-$(document).ready(function(){
+// плавныe скролы
+$(document).ready(function(rocketScroll){
 	$("#rocketFixed").on("click","a", function (event) {
 		event.preventDefault();
-		var id  = $(this).attr('href'),
+		var id = $(this).attr('href'),
+        top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+});
+
+$(document).ready(function(navScroll){
+	$("#nav").on("click","a", function (event) {
+		event.preventDefault();
+		var id = $(this).attr('href'),
+        top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+});
+
+$(document).ready(function(navResizeScroll){
+	$("#nav-resize").on("click","a", function (event) {
+		event.preventDefault();
+		var id = $(this).attr('href'),
         top = $(id).offset().top;
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
@@ -27,7 +45,7 @@ contactClose.addEventListener('click', function() {
 });
 
 // слайдер
-jQuery(document).ready(function() {
+jQuery(document).ready(function(circleSlider) {
     function htmSlider() {
 		var slideWrap = jQuery('.slide-wrap');
         var nextLink = jQuery('.next-slide');
@@ -51,7 +69,7 @@ jQuery(document).ready(function() {
         prevLink.click(function() {
             if (!slideWrap.is(':animated')) {
 				slideWrap
-                    .css({ 'left': newLeftPos })
+                    .css({'left': newLeftPos })
                     .find('.slide-wrap__item:last')
                     .prependTo(slideWrap)
                     .parent()

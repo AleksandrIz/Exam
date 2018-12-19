@@ -55,4 +55,27 @@
     .quote img {
         height: 4vh;
     }
+    .bcontent__column .hidden {
+        display: none;
+    }
+    .bcontent__column .visible {
+        display: block;
+    }
+    .blog h2 {
+        height: 10vh;
+    }
+    .bcontent {
+        height: 60vh;
+    }
+    .bcontent__column__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .bcontent__column__item p {
+        width: 85%;
+    }
+    .rectangle {
+        margin: 0;
+    }
 }

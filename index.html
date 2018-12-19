@@ -23,18 +23,22 @@
                 <div class="navigation">
                     <ul class="logo">
                         <li class="logo__item"><a href="#">MIT-21</a>
-                            <ul class="nav-resize">
-                                <li class="nav-resize__item"><a href="#">ABOUT</a></li>
-                                <li class="nav-resize__item"><a href="#">PORTFOLIO</a></li>
-                                <li class="nav-resize__item"><a href="#">BLOG</a></li>
+                            <ul class="nav-resize" id="nav-resize">
+                                <li class="nav-resize__item"><a href="#about">ABOUT</a></li>
+                                <li class="nav-resize__item"><a href="#work">WORK</a></li>
+                                <li class="nav-resize__item"><a href="#blog">BLOG</a></li>
+                                <li class="nav-resize__item"><a href="#services">SERVICES</a></li>
+                                <li class="nav-resize__item"><a href="#datab">DATA</a></li>
                                 <li class="nav-resize__item"><a id="contact__resize" href="#">CONTACT</a></li>
                             </ul>
                         </li>
                     </ul>
-                    <ul class="nav">
-                        <li class="nav__item"><a href="#">ABOUT</a></li>
-                        <li class="nav__item"><a href="#">PORTFOLIO</a></li>
-                        <li class="nav__item"><a href="#">BLOG</a></li>
+                    <ul class="nav" id="nav">
+                        <li class="nav__item"><a href="#about">ABOUT</a></li>
+                        <li class="nav__item"><a href="#work">WORK</a></li>
+                        <li class="nav__item"><a href="#blog">BLOG</a></li>
+                        <li class="nav__item"><a href="#services">SERVICES</a></li>
+                        <li class="nav__item"><a href="#datab">DATA</a></li>
                         <li class="nav__item"><a href="#" id="contact">CONTACT</a></li>
                     </ul>
                 </div>
@@ -59,7 +63,7 @@
         </header>
 
         <main class="main">
-            <section class="section even">
+            <section class="section even" id="about">
                 <div class="main__resize">
                     <article class="article">
                         <div class="article__item"><h2>ABOUT OUR PRODUCTS</h2></div>
@@ -83,17 +87,17 @@
                 </div>
             </section>
 
-            <section class="section odd"></section>
+            <section class="section odd" id="work"></section>
 
-            <section class="section even">
+            <section class="section even" id="services">
                 <div class="main__resize">
                     <article class="article">
                         <div class="article__item"><h2>OUR SERVICES</h2></div>
                         <div class="article__item line"></div>
-                        <div class="article__item"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ex voluptate excepturi soluta ducimus magni praesentium, quae sapiente eaque id quisquam dolore facere harum quis nihil labore modi hic repudiandae officiis, maxime a saepe. Sint vero eligendi nemo id. A?</p></div>
+                        <div class="article__item"><p>Долго искал подходящую песню, надеюсь вы послушаете. Многие защищены копирайтом (вылазит ошибка "видео недоступно"), и не проигрывается. Интересный факт: в произведении должен был присудствовать как вокал, так и сама Долорес О`Риордан.</p></div>
                     </article>
                     <div class="video">
-                        <iframe class="video__item" src="https://www.youtube.com/embed/nuGrrrFu248" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__item" src="https://www.youtube.com/embed/9XaS93WMRQQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </section>
@@ -103,7 +107,7 @@
                     <div class="quoteText">
                         <div class="quoteText__item"><img src="imag/dialog.png" alt="dialog"></div>
                         <div class="quoteText__item">
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, cum obcaecati. Doloremque amet ab veritatis, sapiente facilis cum, eveniet minus quasi optio nisi laboriosam quis."</p>
+                            <p>"Я понимаю, что задают много, и у вас нет времени. Просто разберите мой код, кто не сделал самостоятельно, попробуйте написать с нуля. Я очень хочу облегчить ваши страдания. Хотя Будда говорил, что путь к Нирване именно через страдания."</p>
                             <div class="author">
                                 <div class="line"></div>
                                 <p>Serge Nikiforov</p>
@@ -113,14 +117,42 @@
                 </div>
             </div>
 
-            <div class="data even"></div>
+            <div class="data even" id="datab"></div>
 
-            <section class="section blog">
-                <img src="imag/blog.png" alt="blog" />
+            <div class="blog odd" id="blog">
                 <div class="main__resize">
-
+                    <h2>BLOG</h2>
+                    <div class="bcontent">
+                        <div class="bcontent__column">
+                            <div class="bcontent__column__item">
+                                <div class="rectangle"></div>
+                                <a href="#">The description for the image</a>
+                                <p class="hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum accusantium recusandae nihil cupiditate earum? Vero non omnis deleniti ea quisquam nostrum velit illo quae odio modi minus ipsum, quod quia similique. Rem amet laboriosam nihil delectus iure nostrum error vero.</p>
+                                <p class="visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eligendi consequatur accusantium aut vitae vel...</p>
+                            </div>
+                            <div class="bcontent__column__item">
+                                <div class="rectangle"></div>
+                                <a href="#">The description for the image</a>
+                                <p class="hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum accusantium recusandae nihil cupiditate earum? Vero non omnis deleniti ea quisquam nostrum velit illo quae odio modi minus ipsum, quod quia similique. Rem amet laboriosam nihil delectus iure nostrum error vero.</p>
+                                <p class="visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eligendi consequatur accusantium aut vitae vel...</p>
+                            </div>
+                            <a href="#" class="moreb visible">More Blogs</a>
+                        </div>
+                        <div class="bcontent__column hidden">
+                            <div class="bcontent__column__item">
+                                <div class="rectangle"></div>
+                                <a href="#">The description for the image</a>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum accusantium recusandae nihil cupiditate earum? Vero non omnis deleniti ea quisquam nostrum velit illo quae odio modi minus ipsum, quod quia similique. Rem amet laboriosam nihil delectus iure nostrum error vero.</p>
+                            </div>
+                            <div class="bcontent__column__item">
+                                <div class="rectangle"></div>
+                                <a href="#">The description for the image</a>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum accusantium recusandae nihil cupiditate earum? Vero non omnis deleniti ea quisquam nostrum velit illo quae odio modi minus ipsum, quod quia similique. Rem amet laboriosam nihil delectus iure nostrum error vero.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
             
             <div class="map"></div>
         </main>
